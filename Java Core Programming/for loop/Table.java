@@ -1,0 +1,18 @@
+//WAP to print table
+
+import java.util.Scanner;
+class Table
+{
+	public static void main(String [] args)
+	{
+	 Scanner sc=new Scanner(System.in);
+
+	 System.out.print("Enter the Number to Display the Table: ");
+	 int n=sc.nextInt();
+	
+	 for(int i=1;i<=10;i++)
+	 {
+	  System.out.println(n+" x "+i+" = "+(n*i));
+	 }
+	}
+}
