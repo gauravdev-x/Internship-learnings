@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+var sec=0;
+var min=0;
+function timer()
+{
+sec=++;
+
+if(sec==59)
+{
+min++;
+sec=0;
+}
+document.getElementById("t").innerHTML=getnum(min)+" : "+getnum(sce);
+if(min==5)
+{
+alert("Your Time Successfully Completed");
+}
+else
+{
+window.setTimeout("timer()",300);
+}
+}
+function  getnum(n)
+{
+if(n<10)
+{
+return"0"+n;
+}
+return n;
+}
+</script>
+</head>
+<body onload="timer()">
+<h1>Timer</h1>
+<br/>
+<h3 id="t"></h3>
+</body>
+</html>

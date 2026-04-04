@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>value getting in js</title>
+
+<script>
+
+function sub()
+{
+//window.alert("Hello!!");
+var a=document.getElementById("x").value; //here we are getting the value of first text box by id 'x' and asssinging to a
+//window.alert(a);
+var b=document.getElementById("y").value;//here we are getting the value of second text box by id 'y' and asssinging to b
+//window.alert(b);
+var sub=(a-b);
+//window.alert(sub);
+document.write("Subtraction = "+sub);
+}
+
+</script>
+ 
+</head>
+<body>
+
+Enter First Number: <input type="text" id="x"/><br/>
+
+Enter Second Number: <input type="text" id="y"/><br/>
+
+<input type="button" value="Subtraction" onclick="sub()"/>
+
+</body>
+</html>

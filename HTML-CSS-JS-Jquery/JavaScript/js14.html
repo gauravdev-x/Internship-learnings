@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script>
+		function bindcity()
+		{
+		var cities=["lucknow","sitapur","Barabanki","Agra",];
+		/*
+		for(var i=0;i<cities.length;i++)
+		{
+		alert(cities[i]);
+		}
+		*/
+		var res="";
+		for(var i in cities)
+		{
+		res=res+"<option>"+cities[i]+"</option>";
+		}
+		document.getElementById("city").innerHTML=res;
+		}
+	</script>
+
+</head>
+<body>
+	<select id="city">
+	<option>Select City</option>
+	</select>
+	<input type="button" value="Bind City" onclick="bindcity();"/>
+</body>
+</html>

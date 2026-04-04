@@ -1,0 +1,19 @@
+//WAP to check given number is even or odd
+using System;
+class Greatest
+{
+ public static void Main()
+ {
+  Console.Write("Enter Number: ");
+  int a=int.Parse(Console.ReadLine());
+
+  if(a%2==0)
+  {
+   Console.WriteLine("\nNumber is Even.");   
+  }
+  else
+  {
+   Console.WriteLine("\nNumber is Odd.");   
+  }
+ }
+}

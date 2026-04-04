@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="jquery-3.5.1.min.js" ></script>	
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var n1=Number($("#t1").val());
+var n2=Number($("#t2").val());
+var res=n1+n2;
+$("#sp").html("<b>Sum="+res+"</b>");	
+
+
+});
+
+});
+</script>
+</head>
+<body>
+Enter First Number :
+<input type="number" id="t1"/>
+<br>
+<input type="number" id="t2"/>
+<br>
+<input type="button" value="Sum" id="btn" value="SUM"/>
+<br>
+<span id="sp"></span>
+</body>
+</html>

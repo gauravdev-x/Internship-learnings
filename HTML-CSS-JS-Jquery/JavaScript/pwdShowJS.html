@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Password</title>
+	<script>
+	function pwd(p)
+	{
+	var btn=p.value;
+	 if(btn=="show")
+	 {
+	 document.getElementById("pass").type="text";
+	 p.value="hide";
+	 }
+	 else
+	 {
+	 document.getElementById("pass").type="password";
+	 p.value="show"
+	 }
+	}
+	</script>
+</head>
+
+<body>
+
+	Enter password:<input type="password" id="pass"/>
+	<input type="button" value="show" onclick="pwd(this)"/>
+
+</body>
+</html>

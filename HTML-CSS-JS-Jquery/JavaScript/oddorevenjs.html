@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function evenodd()
+{
+//window.alert("Check");
+var num=document.getElementById("n").value;
+//window.alert(num);
+if(num%2==0)
+{
+//window.alert("Number is Even : "+num);
+document.write("Number is Even : "+num);
+}
+else
+{
+//window.alert("Number is Odd : "+num);
+document.write("Number is Odd : "+num);
+}
+}
+</script>
+</head>
+<body>
+
+Enter No. 
+<input type="text" id="n"/><br/>
+
+<input type="button" value="Check" onclick="evenodd()"/>
+
+</body>
+</html>

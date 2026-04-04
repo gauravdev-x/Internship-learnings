@@ -1,0 +1,49 @@
+<html>
+<head>
+	<script>
+		function validation()
+		{
+		//alert("ok")
+		var =document.getElementById("pincode").value;
+		var status=true;
+		if(p.length==6)
+		{
+			for(i=0;i=<p.length;i++)
+			{
+				var v=p.charCodeAt(i);
+				//alert(v);
+				if(v>48 && v<=57)
+				{
+				
+				}
+				
+			else	
+				{
+				status=false;
+				break;
+				}
+			}
+		}
+		else
+		{
+		status false;
+		}
+		if(status==false)
+		{
+		document.getElementById("sp").innerHTML="Invalid Pic Code";
+		}
+		return status;
+		}
+
+	</script>
+</head>
+<body>
+<form action="code.php" onsubmit="return validation()">
+	Enter Pin Code:
+	<input type="text" id="pincode"/>
+	<input type="button" value="click Me" />
+	<br>
+	<span id="sp"></span>
+	</form>
+</body>
+</html>

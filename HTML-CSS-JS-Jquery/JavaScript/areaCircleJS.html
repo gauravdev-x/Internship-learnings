@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Area of Circle</title>
+
+<script>
+
+function circle()
+{
+//window.alert("Hello!!");
+var r=document.getElementById("x").value;
+//window.alert(r);
+var area=(22/7)*r*r;
+//window.alert(area);
+//document.write("Area of Circle = "+area);
+
+document.getElementById("res").innerHTML=area;
+
+}
+
+
+</script>
+ 
+</head>
+<body>
+
+Enter the Radius of Circle: <input type="text" id="x"/>
+
+<input type="button" value="Get Area" onclick="circle()"/><br/>
+
+Area of Circle: <span id="res">	</span>
+
+</body>
+</html>

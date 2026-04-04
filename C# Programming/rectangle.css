@@ -1,0 +1,20 @@
+
+using System;
+class rectangle
+{
+ public static void Main()
+ {
+  int l,b,area,perimeter;
+  Console.Write("Enter the Lenght: ");
+  l=int.Parse(Console.ReadLine());
+
+  Console.Write("Enter the Breadth: ");
+  b=int.Parse(Console.ReadLine());
+  
+  area=l*b;
+  perimeter=2*(l+b);
+
+  Console.WriteLine("Area= "+area);
+  Console.WriteLine("Perimeter= "+perimeter);
+ }
+}

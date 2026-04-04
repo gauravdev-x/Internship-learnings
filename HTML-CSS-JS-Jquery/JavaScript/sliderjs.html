@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>	
+		var imgno=1;
+		
+		function slider()
+		{
+		//window.alert("slider");
+		document.getElementById("").src="image/"+imgno+".jpg";
+		imgno++;
+		
+		if(imgno==5)
+		{
+		imgno=1;
+		}
+		window.setTimeout("slider()",1500);
+		}		
+		</script>
+	</head>
+<body onload="slider()">
+<img height="250px" width="1000px" id="img1"/>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="jquery-3.5.1.min.js" ></script>	
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var n=Number($("#t1").val());
+var i,res="";
+for(i=1;i<=10;i++)
+{
+res=res+n+"*"+i+"="+(n*i)+"<br>";
+}
+$("#sp").html(res);
+
+
+
+});
+
+});
+</script>
+</head>
+<body>
+Enter First Number :
+<input type="number" id="t1"/>
+<br>
+<input type="button"  id="btn" value="Table"/>
+<br>
+<span id="sp"></span>
+</body>
+</html>

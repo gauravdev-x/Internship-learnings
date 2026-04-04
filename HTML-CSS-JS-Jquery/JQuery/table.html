@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script src="jquery-3.5.1.min.js" ></script>	
+
+	<script>
+		$(document).ready(function(){
+		$("#btn").click(function(){
+		var n=Number($("#num").val());
+		table="";
+		
+		for(var i=1;i<=10;i++)
+		{
+			table=table+n+"*"+i+"="+(n*i)+"<br>";
+		}
+
+		$("#sp").html(table);
+							});
+								});
+	</script>
+
+</head>
+
+<body>
+
+Enter the Number to Print Table:
+<input type="number" id="num"/>
+</br>
+
+<input type="button" value="Table" id="btn"/>
+</br>
+
+<span id="sp">		</span>
+
+</body>
+</html>

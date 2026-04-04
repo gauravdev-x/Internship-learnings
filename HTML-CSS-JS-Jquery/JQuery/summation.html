@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="jquery-3.5.1.min.js" ></script>	
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var x=Number($("#a").val());
+var y=Number($("#b").val());
+var result=x+y;
+$("#sp").html("<b>Sum="+result+"</b>");	
+
+});
+
+});
+</script>
+</head>
+
+<body>
+
+Enter First Number: 
+<input type="number" id="a"/>
+</br>
+Enter Second Number: 
+<input type="number" id="b"/>
+</br>
+<input type="button" value="Sum" id="btn"/>
+</br>
+
+<span id="sp">		</span>
+
+</body>
+</html>

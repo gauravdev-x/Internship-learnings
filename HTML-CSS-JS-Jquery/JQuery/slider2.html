@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+var list=["1.jpg","2.jpg","3.jpg","4.jpg"];
+var index=0;
+function slider()
+{
+$("#img1").attr("src","photos/"+list[index]);
+index++;
+if(index==list.lenght)
+{
+index=0;
+}
+window.setTimeout("slider()",2000);
+}
+$(document).ready(function(){
+slider();
+});
+
+
+</script>
+</head>
+<body>
+<img id="img1" style="height:300px;width:1000px:"/>
+
+
+
+
+
+
+
+</body>
+</html>

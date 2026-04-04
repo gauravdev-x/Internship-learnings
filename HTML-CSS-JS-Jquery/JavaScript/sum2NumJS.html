@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Summation of 2 Numbers</title>
+	<script>
+	function add()
+	{
+	//window.alert("Check");
+	var x=document.getElementById("num1").value;
+	//window.alert(x);
+	var y=document.getElementById("num2").value;
+	//window.alert(y);
+	var sum=parseInt(x)+parseInt(y);
+	//window.alert(sum);
+	document.getElementById("sum").innerHTML=sum;
+	}
+	</script>
+</head>
+
+<body>
+Enter First No. <input type="text" id="num1"/>
+<br/>
+Enter Second No. <input type="text" id="num2"/>
+
+<input type="button" value="Add" onclick="add()"/>
+<br/>
+Summation: <span id="sum">	</span>
+</body>
+</html>

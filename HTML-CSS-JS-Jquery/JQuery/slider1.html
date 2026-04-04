@@ -1,0 +1,26 @@
+<html>
+<head>
+<script scr="jquery-3.5.1.min.js"></script>
+<script>
+var imgno=1;
+function slider()
+{
+$("#img1").attr("src","images/"+imgno+".jpg");
+imgno++;
+if(imgno==5)
+{
+imgno=1;
+}
+window.setTimeout("slider()",2000);
+}
+$(document).ready(function(){
+slider();
+});
+
+
+</script>
+</head>
+<body>
+<img id="img1" style="height:200px";"width:1000px" ;/>
+</body>
+</html>
